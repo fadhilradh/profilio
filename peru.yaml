@@ -1,6 +1,0 @@
-imports:
-  k8s-deploy: k8s-deploy/
-
-git module k8s-deploy:
-  url: https://gitlab.com/wartek-id/infra/k8s-deploy.git
-  rev: master

@@ -1,7 +1,6 @@
 import Router from 'next/router'
 import NProgress from 'nprogress'
 
-import '@wartek-id/design-tokens/build/guru-mobile/css/tokens.css'
 import 'styles/global.css'
 
 Router.events.on('routeChangeStart', () => {

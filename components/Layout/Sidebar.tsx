@@ -8,7 +8,7 @@ const Sidebar = () => {
       <div className="h-screen w-2/5 bg-surface-secondary">
         <Logo />
         <div className="ml-32">
-          <h1 className="mb-4 font-primary text-[32px] leading-9 text-primary">
+          <h1 className="mb-4 text-[32px] leading-9 text-primary">
             Welcome to <br /> Coinprivy
           </h1>
           <p className="font-secondary text-secondary">
