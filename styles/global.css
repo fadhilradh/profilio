@@ -7,6 +7,11 @@
     @apply w-full rounded-md border border-stroke-primary bg-transparent 
     px-4 py-2 font-thin text-primary  focus:border-accent focus:outline-none;
   }
+
+  .base-select {
+    @apply w-full border-b border-stroke-primary bg-transparent 
+    px-4 py-2 font-thin text-primary  focus:border-accent focus:outline-none;
+  }
 }
 
 .container {
