@@ -13,26 +13,26 @@ const Registration = () => {
         <h3 className="mb-2 font-semibold leading-none text-primary">
           Account Detail
         </h3>
-        <fieldset className="mb-6">
+        <div className="mb-6">
           <label className="mb-2 text-[13px] text-primary" htmlFor="country">
             Select Country
           </label>
           <select name="phone" className="base-select">
             <option value="">Tes</option>
           </select>
-        </fieldset>
-        <fieldset>
+        </div>
+        <div>
           <label className="mb-2 text-[13px] text-primary" htmlFor="phone">
             Phone Number
           </label>
           <input name="phone" type="phone" className="base-input" />
-        </fieldset>
-        <fieldset className="!mt-6">
+        </div>
+        <div className="!mt-6">
           <label className="mb-2 text-[13px] text-primary" htmlFor="password">
             Password
           </label>
           <input name="password" type="password" className="base-input" />
-        </fieldset>
+        </div>
       </form>
 
       <div className="mt-9   ">
