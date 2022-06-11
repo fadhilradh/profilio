@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import React from 'react'
 
 interface PageProps {
-  children?: React.ReactElement
+  children: React.ReactElement
   classes?: string
 }
 
