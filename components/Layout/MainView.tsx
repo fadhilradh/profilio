@@ -10,7 +10,7 @@ const MainView = ({ children, classes }: PageProps) => {
   return (
     <div
       className={clsx(
-        'h-screen w-3/5 overflow-auto bg-surface-primary',
+        'h-screen w-full overflow-auto bg-surface-primary md:w-8/12 xl:w-9/12',
         classes
       )}
     >

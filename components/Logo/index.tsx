@@ -3,7 +3,7 @@ import React from 'react'
 
 const Logo = () => {
   return (
-    <div className="mb-16 pt-24">
+    <div>
       <div className="ml-24 flex items-center gap-x-3">
         <Image
           width={24}
