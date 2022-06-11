@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Layout from 'components/Layout'
 import MainView from 'components/Layout/MainView'
 import Sidebar from 'components/Layout/Sidebar'
 
@@ -31,7 +32,7 @@ const ProfileApp = () => {
   ]
 
   return (
-    <div className="flex">
+    <Layout>
       <Sidebar />
       <MainView>
         <>
@@ -53,7 +54,7 @@ const ProfileApp = () => {
               <p className="text-[14px] text-secondary">Level 1 - #SG769891</p>
             </section>
 
-            <div className="mt-11 flex gap-x-8 border-b border-stroke-primary">
+            <div className="mt-11 flex justify-between overflow-auto border-b border-stroke-primary xl:justify-start xl:gap-x-8">
               {tabsData.map((tab, idx) => {
                 return (
                   <button
@@ -77,7 +78,7 @@ const ProfileApp = () => {
           </main>
         </>
       </MainView>
-    </div>
+    </Layout>
   )
 }
 

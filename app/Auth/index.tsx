@@ -1,6 +1,7 @@
 import React from 'react'
 
 import CurrentDate from 'components/CurrentDate'
+import Layout from 'components/Layout'
 import MainView from 'components/Layout/MainView'
 import Sidebar from 'components/Layout/Sidebar'
 
@@ -21,9 +22,9 @@ const AuthApp = () => {
     },
   ]
   return (
-    <div className="flex">
+    <Layout>
       <Sidebar />
-      <MainView classes="p-24">
+      <MainView classes="p-8 md:p-24">
         <>
           <CurrentDate />
           <div className="mt-11 flex gap-x-10 border-b border-stroke-primary">
@@ -49,7 +50,7 @@ const AuthApp = () => {
           </div>
         </>
       </MainView>
-    </div>
+    </Layout>
   )
 }
 

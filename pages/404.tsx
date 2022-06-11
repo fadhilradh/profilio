@@ -8,7 +8,7 @@ export default function PageNotFound() {
   return (
     <div className="h-screen">
       <div className="flex min-h-full flex-col bg-white pt-16 pb-12">
-        <main className="mx-auto flex w-full max-w-7xl flex-grow flex-col justify-center px-4 sm:px-6 lg:px-8">
+        <main className="mx-auto flex w-full max-w-7xl flex-grow flex-col justify-center px-4 md:px-6 lg:px-8">
           <div className="flex flex-shrink-0 justify-center">
             <Link href="/">
               <a className="inline-flex">
@@ -22,7 +22,7 @@ export default function PageNotFound() {
               <p className="text-sm font-semibold uppercase tracking-wide text-primary">
                 404 error
               </p>
-              <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+              <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 md:text-5xl">
                 Halaman tidak ditemukan
               </h1>
               <p className="mt-2 text-base text-gray-500">
