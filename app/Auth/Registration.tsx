@@ -1,10 +1,11 @@
+import Image from 'next/image'
 import React from 'react'
 
 import { Button } from 'components/Button'
 
 const Registration = () => {
   return (
-    <div>
+    <>
       <form className="rounded-lg border border-stroke-primary p-8">
         <h3 className="!font-semibold text-primary">Create New Account</h3>
         <p className="mb-8 text-xs text-secondary">
@@ -35,7 +36,8 @@ const Registration = () => {
         </div>
       </form>
 
-      <div className="mt-9   ">
+      <div className="mt-9 flex items-center gap-x-2">
+        <Image src="/icon/download.png" width={24} height={16} alt="Download" />
         <a href="#" className="font-secondary text-accent">
           Terms and Conditions
         </a>
@@ -45,7 +47,7 @@ const Registration = () => {
         <Button>Reset</Button>
         <Button variant="primary">Login</Button>
       </div>
-    </div>
+    </>
   )
 }
 

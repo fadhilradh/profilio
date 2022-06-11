@@ -4,7 +4,7 @@ import { Button } from 'components/Button'
 
 const Login = () => {
   return (
-    <div>
+    <>
       <form className="rounded-lg border border-stroke-primary p-8">
         <h3 className="mb-8 !font-semibold text-primary">Login Account</h3>
         <div>
@@ -25,7 +25,7 @@ const Login = () => {
         <Button>Reset</Button>
         <Button variant="primary">Login</Button>
       </div>
-    </div>
+    </>
   )
 }
 
