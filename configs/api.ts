@@ -1,19 +1,19 @@
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios'
 import { stringify } from 'query-string'
 
-export const baseUrl = process.env.NEXT_PUBLIC_API_URL
+export const baseURL = process.env.NEXT_PUBLIC_API_URL
 
-const headers = {
+export const headers = {
   Accept: 'application/json',
   'Content-Type': 'application/json',
 }
 
-const paramsSerializer = (params?: Record<string, unknown>): string =>
+export const paramsSerializer = (params?: Record<string, unknown>): string =>
   stringify(params ?? {}, { arrayFormat: 'none' })
 
-export const api = (opts?: AxiosRequestConfig): AxiosInstance => {
+export function api(opts?: AxiosRequestConfig): AxiosInstance {
   return axios.create({
-    baseURL: baseUrl,
+    baseURL,
     headers,
     paramsSerializer,
     ...opts,
